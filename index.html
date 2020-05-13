@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <form>
+            <figure>
+                <img src="icones/logo.png" alt="PharmaSys" class="logo">
+            </figure>
+
+            <input type="text" required id="usuario" class="input">
+            <label for="senha">Usuário</label>
+            <br>
+            <input type="password" required id="senha" class="input">
+            <label for="senha">Senha</label>
+            <br>
+            <input type="button" id="btn" value="Entrar" title="Acesse o sistema clicando aqui" onClick='redireciona()'>
+            <div>
+                <a href="javascript:void(0)" title="Entre em contato com o suporte em caso de perda de senha" onClick="openWindow('chat.html','','scrollbars=no, width=500, height=1000, left=0, top=0')">Esqueceu sua senha?</a>
+
+                <script language="JavaScript">
+                    <!--
+                    function openWindow(theUrl, winName, features) {
+                        window.open(theUrl, winName, features);
+                    }
+                    -->
+                </script>
+
+            </div>
+
+        </form>
+
+        <div class="modal">
+            <p>Senha ou usuário incorreto</p>
+            <p>Por favor tente novamente</p>
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+
+
+</html>

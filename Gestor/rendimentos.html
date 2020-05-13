@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendimentos || PharmaSys</title>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/troca.js"></script>
+    <script src="../js/redireciona.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/form-cadastro.css">
+    <style>
+        * {
+            overflow: hidden;
+        }
+        
+        .content {
+            height: 200vh;
+        }
+        
+        input {
+            width: 15vw;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div>
+                <p>Usuário:</p>
+            </div>
+
+            <div>
+                <a href="javascript:void(0)" title="Entre em contato com o suporte em caso de perda de senha" onClick="openWindow('../chat.html','','scrollbars=no, width=500, height=1000, left=0, top=0')">Ajuda</a>
+            </div>
+        </header>
+
+        <div class="content">
+            <aside>
+                <nav>
+                    <ul class="menuSide">
+                        <li>
+                            <a href="../gestor-home.html" target="_parent">
+                                <img src="../icones/home-branco.png" alt="Voltar para o inicio" class="icones" title="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../clientes.html" target="_parent">
+                                <img src="../icones/clientes-fff.png" alt="Clientes" class="icones" title="Clientes">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pesquisa.html" target="_parent">
+                                <img src="../icones/pesquisa-fff.png" alt="Clientes" class="icones" title="Pesquisar">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../Ranking.html" target="_parent">
+                                <img src="../icones/ranking-fff.png" alt="Clientes" class="icones" title="Ranking de vendas">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../configuracoes.html" target="_parent">
+                                <img src="../icones/configuracoes-fff.png" alt="Clientes" class="icones" title="Configurações">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../login.html" target="_parent">
+                                <img src="../icones/exit.png" alt="Sair" class="icones" title="Sair">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main>
+                <h1>Rendimentos</h1>
+
+                <ul class="menugestor">
+                    <li class="balancoa">Balanço diário de vendas</li>
+                    <li class="balancob">Balanço semanal de vendas</li>
+                    <li class="balancoc">Balanço anual de vendas</li>
+                    <li class="balancod">Balanço de vendas por período</li>
+                </ul>
+
+                <div class="rendi">
+
+                    <div class="ba">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100" style="width:63.2%">
+                                63,2%
+                            </div>
+                        </div>
+
+                        <ul class="subrendi">
+                            <li>
+                                <p>Vendas Medicamentos</p>
+                                <div>
+                                    <code>R$ 1.490,00</code>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Vendas Perfumaria</p>
+                                <div>
+                                    <code>R$ 700,00</code>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Vendas Beleza</p>
+                                <div>
+                                    <code>R$ 300,00</code>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Vendas Suprimentos</p>
+                                <div>
+                                    <code>R$ 190,00</code>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <section>
+                            <p>Meta semanal<br> <code>R$: 5.000,00</code></p>
+                            <p>Até o momento<br><code>R$: 2.680,00</code></p>
+                            <p>Falta<br><code>R$: 2.320,00</code></p>
+                        </section>
+                    </div>
+
+
+                    <div class="bb">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                                20%
+                            </div>
+                        </div>
+                        <ul class="subrendi">
+                            <li>
+                                <p>Vendas Medicamentos</p>
+                                <div>
+                                    <code>R$ 5.000,00</code>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Vendas Perfumaria</p>
+                                <div>
+                                    <code>R$ 1.000,00</code>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Vendas Beleza</p>
+                                <div>
+                                    <code>R$ 700,00</code>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Vendas Suprimentos</p>
+                                <div>
+                                    <code>R$ 402,00</code>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <section>
+                            <p>Meta semanal: <code>R$: 35.000,00</code></p>
+                            <p>Até o momento: <code>R$: 7.102,00</code></p>
+                            <p>Falta: <code>R$: 27.898,00</code></p>
+                        </section>
+                    </div>
+
+
+                    <div class="bc">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100" style="width:21%">
+                                21%
+                            </div>
+                        </div>
+                        <ul class="subrendi">
+                            <li>
+                                <p>Vendas Medicamentos</p>
+                                <div>
+                                    <code>R$ 70.000,00</code>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Vendas Perfumaria</p>
+                                <div>
+                                    <code>R$ 7.853,00</code>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Vendas Beleza</p>
+                                <div>
+                                    <code>R$ 5.000,00</code>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Vendas Suprimentos</p>
+                                <div>
+                                    <code>R$ 1.402,00</code>
+                                </div>
+                            </li>
+                        </ul>
+                        <section>
+                            <p>Meta anual: <code>R$: 420.000,00</code></p>
+                            <p>Até o momento: <code>R$: 84.335,00</code></p>
+                            <p>Falta: <code>R$: 335.665,00</code></p>
+                        </section>
+                    </div>
+
+                    <div class="bda">
+                        De: <input type="date"> a: <input type="date">
+                        <br>
+                        <input type="reset" value="Apagar" class="btnRel">
+                        <input type="button" value="Gerar gráfico" class="btnRel">
+                        <div class="bd">
+                            <div class="progress bd">
+                                <div class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                                    100%
+                                </div>
+                            </div>
+                            <ul class="subrendi">
+                                <li>
+                                    <p>Vendas Medicamentos</p>
+                                    <div>
+                                        <code>R$ 70.000,00</code>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Vendas Perfumaria</p>
+                                    <div>
+                                        <code>R$ 7.853,00</code>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Vendas Beleza</p>
+                                    <div>
+                                        <code>R$ 5.000,00</code>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Vendas Suprimentos</p>
+                                    <div>
+                                        <code>R$ 1.402,00</code>
+                                    </div>
+                                </li>
+                            </ul>
+                            <section>
+                                <p>Meta anual: <code>R$: 420.000,00</code></p>
+                                <p>Até o momento: <code>R$: 84.335,00</code></p>
+                                <p>Falta: <code>R$: 335.665,00</code></p>
+                            </section>
+                        </div>
+
+                    </div>
+
+            </main>
+            </div>
+
+        </div>
+
+</body>
+
+<script>
+    $(function() {
+
+        var opt1 = $(".balancoa");
+        var opt2 = $(".balancob");
+        var opt3 = $(".balancoc");
+        var opt4 = $(".balancod");
+        var ba = $('.ba');
+        var bb = $('.bb');
+        var bc = $('.bc');
+        var bd = $('.bd');
+        $(".bda").hide();
+
+        opt1.click(function() {
+            ba.show();
+            bb.hide();
+            bc.hide();
+            bd.hide();
+            $(".bda").hide();
+        });
+
+        opt2.click(function() {
+            bb.show();
+            ba.hide();
+            bc.hide();
+            bd.hide();
+            $(".bda").hide();
+        });
+
+        opt3.click(function() {
+            bc.show();
+            bb.hide();
+            ba.hide();
+            bd.hide();
+            $(".bda").hide();
+        });
+
+        opt4.click(function() {
+            $(".bda").show();
+            ba.hide();
+            bb.hide();
+            bc.hide();
+
+            $(".btnRel").click(function() {
+                bd.show();
+            });
+        });
+
+
+    });
+</script>
+
+<script language="JavaScript">
+    function openWindow(theUrl, winName, features) {
+        window.open(theUrl, winName, features);
+    }
+</script>
+
+</html>

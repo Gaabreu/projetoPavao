@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador || PharmaSys</title>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/troca.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <header>
+            <div>
+                <p>Usuário:</p>
+            </div>
+
+            <div>
+                <a href="javascript:void(0)" title="Entre em contato com o suporte em caso de perda de senha" onClick="openWindow('../chat.html','','scrollbars=no, width=500, height=1000, left=0, top=0')">Ajuda</a>
+            </div>
+        </header>
+
+        <div class="content">
+            <aside>
+                <nav>
+                    <ul class="menuSide">
+                        <li>
+                            <a href="../balcao_home.html" target="_parent">
+                                <img src="../icones/home-branco.png" alt="Voltar para o inicio" class="icones" title="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../clientes.html" target="_parent">
+                                <img src="../icones/clientes-fff.png" alt="Clientes" class="icones" title="Clientes">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pesquisa.html" target="_parent">
+                                <img src="../icones/pesquisa-fff.png" alt="Clientes" class="icones" title="Pesquisar">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Ranking.html" target="_parent">
+                                <img src="../icones/ranking-fff.png" alt="Clientes" class="icones" title="Ranking de vendas">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../configuracoes.html" target="_parent">
+                                <img src="../icones/configuracoes-fff.png" alt="Clientes" class="icones" title="Configurações">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../login.html" target="_parent">
+                                <img src="../icones/exit.png" alt="Sair" class="icones" title="Sair">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main>
+
+                <h1>Comparador</h1>
+
+                <article class="comparacao">
+                    <section class="comparado">
+                        <p>Nome do produto: <input type="text" class="texto"></p>
+
+                        <input type="button" value="pesquisar" class="btnRel">
+                        <input type="reset" value="Nova pesquisa" class="btnRel clean">
+                    </section>
+                    <section class="comparado Rshow">
+
+                        <h4>Opções ao Novalgina</h4>
+                        <hr>
+                        <p>Nome do produto: Dipirona</p>
+
+                        <p>Preço: 1,50</p>
+                        <br>
+                        <p>Descrição: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, sed! Sint, quos rerum tempora minus libero delectus. Quod nemo est, nulla maiores facere et. Doloremque minima laudantium molestiae laboriosam omnis.</p>
+                        <hr>
+                    </section>
+                </article>
+
+            </main>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+
+            var pesquisa = $(".btnRel");
+            var produto = "novalgina";
+
+            pesquisa.click(function() {
+                if ($(".texto").val() == produto) {
+                    $(".Rshow").show();
+                } else {
+                    alert("Produto não encontrado");
+                }
+
+            });
+
+
+
+        });
+    </script>
+
+    <script language="JavaScript">
+        function openWindow(theUrl, winName, features) {
+            window.open(theUrl, winName, features);
+        }
+    </script>
+
+
+
+</body>
+
+</html>

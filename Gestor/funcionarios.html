@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funcionários || PharmaSys</title>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/troca.js"></script>
+    <script src="../js/redireciona.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/form-cadastro.css">
+
+    <style>
+        .content {
+            height: 120vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div>
+                <p>Usuário:</p>
+            </div>
+
+            <div>
+                <a href="javascript:void(0)" title="Entre em contato com o suporte em caso de perda de senha" onClick="openWindow('../chat.html','','scrollbars=no, width=500, height=1000, left=0, top=0')">Ajuda</a>
+            </div>
+        </header>
+
+        <div class="content">
+            <aside>
+                <nav>
+                    <ul class="menuSide">
+                        <li>
+                            <a href="../gestor-home.html" target="_parent">
+                                <img src="../icones/home-branco.png" alt="Voltar para o inicio" class="icones" title="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../clientes.html" target="_parent">
+                                <img src="../icones/clientes-fff.png" alt="Clientes" class="icones" title="Clientes">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pesquisa.html" target="_parent">
+                                <img src="../icones/pesquisa-fff.png" alt="Clientes" class="icones" title="Pesquisar">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../Ranking.html" target="_parent">
+                                <img src="../icones/ranking-fff.png" alt="Clientes" class="icones" title="Ranking de vendas">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../configuracoes.html" target="_parent">
+                                <img src="../icones/configuracoes-fff.png" alt="Clientes" class="icones" title="Configurações">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../login.html" target="_parent">
+                                <img src="../icones/exit.png" alt="Sair" class="icones" title="Sair">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main>
+                <h1>Acompanhamento de funcionários</h1>
+
+                <div class="divisa">
+                    <ul class="funcionarios">
+                        <li>
+                            <div>Cláudia Nunes</div>
+                        </li>
+                        <li>
+                            <div>Eduardo josé</div>
+                        </li>
+                        <li>
+                            <div>Nívia Fgueiredo</div>
+                        </li>
+                        <li>
+                            <div>Otávio Olimbra</div>
+                        </li>
+                        <li>
+                            <div>Cristóvão Roma</div>
+                        </li>
+                        <li>
+                            <div>Tobias Augusto</div>
+                        </li>
+                        <li>
+                            <div>Cintia Almeida</div>
+                        </li>
+                        <li>
+                            <div>Luiza Mendonça</div>
+                        </li>
+                        <li>
+                            <div>Ailson da Silva</div>
+                        </li>
+                        <li>
+                            <div>Vanessa Almeida</div>
+                        </li>
+                    </ul>
+
+                    <section class="dados">
+
+                        <div class="fun">
+                            <strong> Nome: </strong>Cláudia Nunes<br>
+                            <strong> Idade:</strong> 27 anos<br>
+                            <strong>Estado civil: </strong>Casada<br>
+                            <strong>Função: </strong> Caixa<br>
+                            <strong>Carga horária: </strong> 06:00 às 14:00 <br>
+                            <strong>Documentação: </strong> OK <br>
+                            <strong>Registro de ponto: </strong> OK <br>
+                            <button class="infbt">Editar informações</button>
+                        </div>
+
+                        <div class="fun">
+                            <strong> Nome: </strong>Eduardo josé<br>
+                            <strong> Idade:</strong> 18 anos<br>
+                            <strong>Estado civil: </strong>solteiro<br>
+                            <strong>Função: </strong> Estoque<br>
+                            <strong>Carga horária: </strong> 09:00 às 17:00 <br>
+                            <strong>Documentação: </strong> OK <br>
+                            <strong>Registro de ponto: </strong> Atraso dia 01/05/2020 <br>
+                        </div>
+
+                        <div class="fun">
+                            <strong> Nome: </strong>Nívia Fgueiredo<br>
+                            <strong> Idade:</strong> 25 anos<br>
+                            <strong>Estado civil: </strong>Solteira<br>
+                            <strong>Função: </strong> Atendente<br>
+                            <strong>Carga horária: </strong> 06:00 às 14:00 <br>
+                            <strong>Documentação: </strong> OK <br>
+                            <strong>Registro de ponto: </strong> OK <br>
+                        </div>
+
+                        <div class="fun">
+                            <strong> Nome: </strong>Otávio Olimbra<br>
+                            <strong> Idade:</strong> 38 anos<br>
+                            <strong>Estado civil: </strong>Casado<br>
+                            <strong>Função: </strong> Atendente<br>
+                            <strong>Carga horária: </strong> 22:00 às 06:00 <br>
+                            <strong>Documentação: </strong> OK <br>
+                            <strong>Registro de ponto: </strong> OK <br>
+                        </div>
+
+                        <div class="fun">
+                            <strong> Nome: </strong>Cristóvão Roma<br>
+                            <strong> Idade:</strong> 55 anos<br>
+                            <strong>Estado civil: </strong>Solteiro<br>
+                            <strong>Função: </strong>Farmacêutico<br>
+                            <strong>Carga horária: </strong> 07:00 às 19:00 <br>
+                            <strong>Documentação: </strong> OK <br>
+                            <strong>Registro de ponto: </strong> OK <br>
+                        </div>
+
+                        <div class="fun">
+                            <strong> Nome: </strong>Tobias Augusto<br>
+                            <strong> Idade:</strong> 31 anos<br>
+                            <strong>Estado civil: </strong>Casado<br>
+                            <strong>Função: </strong>Estoque<br>
+                            <strong>Carga horária: </strong> 07:00 às 17:00 <br>
+                            <strong>Documentação: </strong> OK <br>
+                            <strong>Registro de ponto: </strong> OK <br>
+                        </div>
+
+                        <div class="fun">
+                            <strong> Nome: </strong>Cintia Almeida<br>
+                            <strong> Idade:</strong> 19 anos<br>
+                            <strong>Estado civil: </strong>Solteira<br>
+                            <strong>Função: </strong>Balconista<br>
+                            <strong>Carga horária: </strong> 14:00 às 22:00 <br>
+                            <strong>Documentação: </strong> OK <br>
+                            <strong>Registro de ponto: </strong> OK <br>
+                        </div>
+
+                        <div class="fun">
+                            <strong> Nome: </strong>Luiza Mendonça<br>
+                            <strong> Idade:</strong> 30 anos<br>
+                            <strong>Estado civil: </strong>Solteira<br>
+                            <strong>Função: </strong>Caixa<br>
+                            <strong>Carga horária: </strong> 14:00 às 22:00 <br>
+                            <strong>Documentação: </strong> OK <br>
+                            <strong>Registro de ponto: </strong> OK <br>
+                        </div>
+
+                        <div class="fun">
+                            <strong> Nome: </strong>Ailson da Silva<br>
+                            <strong> Idade:</strong> 25 anos<br>
+                            <strong>Estado civil: </strong>casado<br>
+                            <strong>Função: </strong>Caixa<br>
+                            <strong>Carga horária: </strong> 14:00 às 22:00 <br>
+                            <strong>Documentação: </strong> OK <br>
+                            <strong>Registro de ponto: </strong> OK <br>
+                        </div>
+
+                        <div class="fun">
+                            <strong> Nome: </strong>Vanessa Almeida<br>
+                            <strong> Idade:</strong> 41 anos<br>
+                            <strong>Estado civil: </strong>Casada<br>
+                            <strong>Função: </strong>Farmacêutica<br>
+                            <strong>Carga horária: </strong> 19:00 às 07:00 <br>
+                            <strong>Documentação: </strong> OK <br>
+                            <strong>Registro de ponto: </strong> OK <br>
+                            <button class="infbt">Editar informações</button>
+                        </div>
+
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <script>
+        $(function() {
+
+            $(".funcionarios li:first-child").click(function() {
+                $(".fun:first-child").show();
+                $(".fun:last-child").hide();
+
+                $(".fun").css({
+                    "margin": "70px 100px",
+                    "background": "#fff",
+                    "padding": "10%",
+                    "height": "38.1vh",
+                })
+            });
+
+            $(".funcionarios li:last-child").click(function() {
+                $(".fun:first-child").hide();
+                $(".fun:last-child").show();
+            });
+
+
+        });
+    </script>
+
+    <script language="JavaScript">
+        function openWindow(theUrl, winName, features) {
+            window.open(theUrl, winName, features);
+        }
+    </script>
+
+</body>
+
+</html>

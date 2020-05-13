@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão || PharmaSys</title>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/troca.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div>
+                <p>Usuário:</p>
+            </div>
+            <div>
+                <a href="javascript:void(0)" title="Entre em contato com o suporte em caso de perda de senha" onClick="openWindow('chat.html','','scrollbars=no, width=500, height=1000, left=0, top=0')">Ajuda</a>
+            </div>
+        </header>
+        <div class="content">
+            <aside>
+                <nav>
+                    <ul class="menuSide home">
+                        <li>
+                            <a href="clientes.html" target="_parent">
+                                <img src="icones/clientes-fff.png" alt="Clientes" class="icones" title="Clientes">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pesquisa.html" target="_parent">
+                                <img src="icones/pesquisa-fff.png" alt="Clientes" class="icones" title="Pesquisar">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Ranking.html" target="_parent">
+                                <img src="icones/ranking-fff.png" alt="Clientes" class="icones" title="Ranking de vendas">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="configuracoes.html" target="_parent">
+                                <img src="icones/configuracoes-fff.png" alt="Clientes" class="icones" title="Configurações">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" target="_parent">
+                                <img src="icones/exit.png" alt="Sair" class="icones" title="Sair">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main>
+                <h1>
+                    <img src="icones/gestao-azul.png" alt=""><br>Seja bem vindo</h1>
+                <ul class="opcoes opcoesb">
+                    <a href="Gestor/rendimentos.html" title="Acessar os rendimentos" alt='Icone para acesar os rendimentos'>
+                        <li>Balanço</li>
+                    </a>
+                    <a href="Gestor/terceirizados.html" title="Acessar contratos de terceirizados" alt="Icone para acessar contratos de terceirizados">
+                        <li>Terceirizados</li>
+                    </a>
+                    <a href="Gestor/vendas.html" title="Acessar Vendas" alt='Icone para acessar Página de vendas'>
+                        <li>Vendas</li>
+                    </a>
+                    <a href="Gestor/funcionarios.html" title="Acessar Acompanhamento de funcionarios" alt='Icone para acessar página de acompanhamento de funcionários'>
+                        <li>Funcionários</li>
+                    </a>
+                    <a href="Gestor/relatorios-gerais.html" title="Acessar relatórios gerais" alt='Icone para acessar relatórios gerais'>
+                        <li>Relatórios</li>
+                    </a>
+                </ul>
+                <ul class="opcoes">
+                    <a href="caixa_home.html" title="Acessar o caixa" alt='Icone para acessar funções do caixa'>
+                        <li>Caixa</li>
+                    </a>
+                    <a href="estoque_home.html" title="Acessar o estoque" alt="Icone para acessar funções do estoque">
+                        <li>Estoque</li>
+                    </a>
+                    <a href="balcao_home.html" title="Acessar balcão" alt='Icone para acessar funções do balcão'>
+                        <li>Vendas</li>
+                    </a>
+                </ul>
+            </main>
+        </div>
+    </div>
+    <script language="JavaScript">
+        function openWindow(theUrl, winName, features) {
+            window.open(theUrl, winName, features);
+        }
+    </script>
+</body>
+
+</html>

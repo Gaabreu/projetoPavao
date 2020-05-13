@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicações gratuitas || PharmaSys</title>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/troca.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div>
+                <p>Usuário:</p>
+            </div>
+            <div>
+                <a href="javascript:void(0)" title="Entre em contato com o suporte em caso de perda de senha" onClick="openWindow('../chat.html','','scrollbars=no, width=500, height=1000, left=0, top=0')">Ajuda</a>
+            </div>
+        </header>
+        <div class="content">
+            <aside>
+                <nav>
+                    <ul class="menuSide">
+                        <li>
+                            <a href="../balcao_home.html" target="_parent">
+                                <img src="../icones/home-branco.png" alt="Voltar para o inicio" class="icones" title="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../clientes.html" target="_parent">
+                                <img src="../icones/clientes-fff.png" alt="Clientes" class="icones" title="Clientes">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pesquisa.html" target="_parent">
+                                <img src="../icones/pesquisa-fff.png" alt="Clientes" class="icones" title="Pesquisar">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Ranking.html" target="_parent">
+                                <img src="../icones/ranking-fff.png" alt="Clientes" class="icones" title="Ranking de vendas">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../configuracoes.html" target="_parent">
+                                <img src="../icones/configuracoes-fff.png" alt="Clientes" class="icones" title="Configurações">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../login.html" target="_parent">
+                                <img src="../icones/exit.png" alt="Sair" class="icones" title="Sair">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main class="forms">
+                <form action="#" method="post" class="gratisb">
+                    <div>
+                        <label for="name">Medicação:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div>
+                        <label for="mail">QTDE CX:</label>
+                        <input type="text" id="dtnasc" required>
+                    </div>
+                    <div>
+                        <label for="mail">QTDE Doses:</label>
+                        <input type="email" id="mail" required>
+                    </div>
+                    <div>
+                        <label for="mail">Próxima retirada:</label>
+                        <input type="date" id="doc" required><br>
+                    </div>
+                    <hr><br>
+                    <div class="button">
+                        <button type="submit" class="finaliza-pedido">Finalizar</button>
+                    </div>
+                </form>
+
+                <form action="#" method="post" class="gratis">
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div>
+                        <label for="mail">Data de nascimento:</label>
+                        <input type="text" id="dtnasc" required>
+                    </div>
+                    <div>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" required>
+                    </div>
+                    <div>
+                        <label for="mail">CPF:</label>
+                        <input type="text" id="doc" required>
+                    </div>
+                    <div>
+                        <label for="mail">Telefone:</label>
+                        <input type="phone" id="tel" required>
+                    </div>
+                    <div>
+                        <label for="mail">CEP:</label>
+                        <input type="text" id="cep" required>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Próximo</button>
+                    </div>
+                </form>
+
+
+            </main>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            var proximo = $(".button");
+            proximo.click(function() {
+                $(".gratis").hide();
+                $(".gratisb").css("display", "block");
+            });
+        });
+
+        var finaliza = $(".finaliza-pedido");
+
+        finaliza.click(function() {
+
+            alert("Medicação registrada na comanda. Por favor, oriente o paciente a se dirigir ao caixa.")
+        });
+    </script>
+
+    <script language="JavaScript">
+        function openWindow(theUrl, winName, features) {
+            window.open(theUrl, winName, features);
+        }
+    </script>
+
+</body>
+
+</html>

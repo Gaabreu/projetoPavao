@@ -1,0 +1,33 @@
+main {
+    position: relative;
+    top: -50px;
+}
+
+label {
+    font-size: 1em;
+}
+
+.tipoDePag {
+    font-size: 1em;
+    margin: 1% 1%;
+    background: #271d62;
+    padding: 2%;
+    display: inline-block;
+    width: 47.5%;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cad {
+    margin: 0% 25% 1% 25%;
+}
+
+#email {
+    margin: 2.5% auto;
+    padding: 1%;
+}
+
+.form-cad {
+    display: none;
+}

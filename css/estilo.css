@@ -1,0 +1,609 @@
+/*DOC GERAL CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    overflow: hidden;
+}
+
+h2 {
+    margin: 2% auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    margin: 0;
+    padding: 0;
+    transform: scale(1);
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+#container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+header,
+.content {
+    height: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #0b014d;
+    color: #fff;
+    font-weight: bold;
+}
+
+header>div {
+    margin: 1% 3%;
+}
+
+.content {
+    display: flex;
+}
+
+aside {
+    width: 10%;
+    background: #271d62;
+}
+
+.menuSide {
+    margin: 0 5%;
+}
+
+.menuSide>li {
+    padding: 30.5% 5%;
+}
+
+.icones {
+    width: 35%;
+    height: 35%;
+    margin: 0 30%;
+    transition: all .3s linear;
+}
+
+main {
+    background: #d1d5d8;
+    margin: 0 auto;
+    width: 90%;
+    color: #271d62;
+    padding: 5% 10%
+}
+
+main>h1 {
+    text-align: center;
+}
+
+.opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+.opcoes>a {
+    background: #271d62;
+    color: #fff;
+    margin: 2%;
+    text-align: center;
+    flex: 1;
+    padding: 2%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all .3s linear;
+}
+
+.opcoes>li>ul {
+    display: none;
+}
+
+.opcoes>a:hover {
+    box-shadow: 0.1vw 0.1vw 1.3vw #6a6299;
+    transition: all .3s ease;
+}
+
+form {
+    background: #ccc;
+    padding: 5%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+form>h1 {
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 4vw;
+}
+
+#codigo,
+#saldo_atual,
+#saldo_sangria {
+    margin: 5% 0%;
+}
+
+label {
+    font-size: 2em;
+}
+
+
+/*PDV*/
+
+#pdv {
+    display: flex;
+}
+
+#pdv>div {
+    width: 50%;
+    height: 70vh;
+}
+
+.formPAG {
+    width: 100%;
+    height: inherit;
+    margin: 5% auto;
+    padding: 13% 5%;
+}
+
+#itens-pdv {
+    border: 0.1px solid #ccc;
+    box-shadow: none;
+}
+
+#paga,
+.parcelas {
+    width: 21vw;
+    height: 3.5vh;
+    margin: 3% 17%;
+    background: #c9c3e7;
+    color: #271d62;
+    ;
+}
+
+article>div>label:first-child {
+    font-weight: bold;
+    margin: auto 15%;
+}
+
+hr {
+    margin: 6% auto;
+}
+
+.tipoDePag {
+    font-size: 1.4em;
+    margin: 1% 1%;
+    background: #271d62;
+    padding: 2%;
+    display: inline-block;
+    width: 47.5%;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type=radio]:checked+label {
+    opacity: .5;
+    font-style: normal;
+}
+
+#avista,
+#parcela {
+    display: none;
+}
+
+.valores {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#ValorPago,
+#Valor {
+    background: none;
+    border: none;
+    font-size: 4vw;
+}
+
+
+/*tabela*/
+
+table {
+    border: 0.1vw solid #022;
+    width: 100%;
+    transform: scale(1.01);
+    box-shadow: 0.1vw 0.1vw 1vw #000;
+    margin-top: 4.5%;
+}
+
+th,
+tr,
+td {
+    padding: 1% 0%;
+}
+
+td {
+    text-align: center;
+}
+
+td:last-child {
+    cursor: pointer;
+}
+
+tr:nth-child(even) {
+    background-color: #014;
+    color: #eee;
+}
+
+
+/*página de pesquisa*/
+
+#search {
+    height: 6vh;
+    width: 20vw;
+}
+
+
+/*comandas*/
+
+.comandas {
+    border: 0.1vw solid #271d62;
+    width: 50%;
+    padding: 5% 10%;
+    margin: 2% auto;
+    background: #eee;
+    display: none;
+}
+
+.comandas>h6 {
+    font-size: 1.5em;
+}
+
+.comandas>p {
+    margin: 4% 0%;
+}
+
+.comandas>strong>p {
+    margin: 10% auto;
+}
+
+.topoBusca {
+    display: flex;
+    justify-content: space-around;
+}
+
+#busca {
+    font-size: 2em;
+    height: 8vh;
+    width: 10vw;
+    flex: 1;
+}
+
+.label-busca {
+    background: #271d62;
+    color: #fff;
+    padding: 0.5% 1%;
+}
+
+.barra {
+    border: 1px solid #000;
+    background: #6f64ad;
+}
+
+.progresso {
+    background-color: #271d62;
+    color: #fff;
+    padding: 1.5%;
+}
+
+
+/*opções do sistema (configurações*/
+
+.opt-sis {
+    width: 97%;
+    margin: 0 auto;
+}
+
+.opt-sis>li {
+    text-indent: 5%;
+    padding: 1.5%;
+    font-size: 1.4em;
+}
+
+.opt-sis>li:hover {
+    cursor: pointer;
+    background: #271d62;
+    color: #fff;
+}
+
+
+/*relatórios*/
+
+.btnRel {
+    font-size: 1em;
+    margin: 2% 4.1%;
+    background: #271d62;
+    padding: 1%;
+    display: inline-block;
+    width: 40.5%;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.relatorios {
+    margin-top: 3%;
+    width: 50%;
+    background: #eee;
+}
+
+.relatorios>p:nth-child(2) {
+    text-align: center;
+}
+
+#estoque {
+    width: 80%;
+    height: 40vh;
+    margin-top: -5%;
+}
+
+.produtoverificado {
+    border: 0.1vw solid #271d62;
+    width: 50%;
+    margin: -5% auto 0 auto;
+    padding: 3%;
+    background-color: #eef;
+}
+
+.produtoverificado>div:first-child {
+    text-align: center;
+}
+
+.produtoverificado>div {
+    border-bottom: 0.1vw solid #ccc;
+}
+
+.flexEstoque {
+    display: flex;
+}
+
+code {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 0.5%;
+}
+
+.opt-comandas {
+    background: rgb(7, 199, 7);
+    text-align: center;
+}
+
+.iframe {
+    display: none;
+}
+
+.mapa {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+.comparacao {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 5% auto;
+    padding: auto 5%;
+}
+
+.comparado {
+    width: 50%;
+    padding: 3%;
+    border-right: 0.1vw solid #271d62;
+}
+
+.comparado:nth-child(2) {
+    display: none;
+}
+
+.comparado>h4 {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+
+/*medicações gratis*/
+
+.gratis,
+.gratisb {
+    margin: -3% auto 0% auto;
+    width: 45%;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+.gratis div+div,
+.gratisb div+div {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 21vw;
+    text-align: left;
+}
+
+.labels-vertical {
+    margin-top: 1%;
+    display: flex;
+    font-size: 0.8vw;
+    justify-content: start;
+}
+
+input {
+    font: 1em sans-serif;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0.1vw solid #999;
+}
+
+input:focus,
+textarea:focus {
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: #000;
+}
+
+.button>button {
+    background: #271d62;
+    color: #eee;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 1vw;
+    padding: 3%;
+    width: 100%;
+}
+
+.gratisb {
+    display: none;
+}
+
+.forms {
+    display: flex;
+}
+
+.gratisb {
+    height: auto;
+}
+
+
+/*página gestor*/
+
+.ba,
+.bb,
+.bc,
+.bd {
+    display: none;
+}
+
+.menugestor {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+    background: #271d62;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.menugestor li {
+    padding: 1.5% 0%;
+}
+
+.menugestor li:hover {
+    opacity: .8;
+}
+
+.rendi {
+    background: #271d62;
+    padding: 5%;
+    color: #fff;
+    font-weight: bold;
+    padding: 5% 4%;
+}
+
+.subrendi {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rendi div>section {
+    display: flex;
+    background: #271ddf;
+    text-align: center;
+    padding: 1%;
+    justify-content: space-evenly;
+}
+
+code {
+    padding: 3%;
+    display: block;
+    width: 20vw;
+    font-size: 2em;
+}
+
+
+/*funcionarios*/
+
+.funcionarios {
+    width: 50%;
+    background: #ccc;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 8% 2%;
+    margin-top: 7%;
+    border: 0.1vw solid #271d62;
+}
+
+.funcionarios>li {
+    margin: 5%;
+    cursor: pointer;
+    border-left: 0.1vw solid #000;
+    text-indent: 3%;
+    transition: all .9s linear;
+}
+
+.funcionarios>li:hover {
+    border-left: none;
+    border-right: 0.1vw solid #000;
+    border-bottom: 0.1vw solid #000;
+    transform: scale(1.05);
+    transition: all .5s linear;
+}
+
+.divisa {
+    display: flex;
+}
+
+.fun {
+    display: none;
+    width: 100%;
+    padding: 5%;
+}
+
+.infbt {
+    width: 70%;
+    margin-top: 10%;
+    background: #271d62;
+    color: #fff;
+}
+
+.relat {
+    width: 80%;
+    margin: 5% auto;
+    background: #999;
+}
+
+.relat>a {
+    color: #271d62;
+}
+
+.relat>li {
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+    border-bottom: 0.1vw solid #271d62;
+}

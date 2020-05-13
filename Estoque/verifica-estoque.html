@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque || PharmaSys</title>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/troca.js"></script>
+    <script src="../js/redireciona.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <header>
+            <div>
+                <p>Usuário:</p>
+            </div>
+
+            <div>
+                <a href="javascript:void(0)" title="Entre em contato com o suporte em caso de perda de senha" onClick="openWindow('../chat.html','','scrollbars=no, width=500, height=1000, left=0, top=0')">Ajuda</a>
+            </div>
+        </header>
+        <div class="content">
+            <aside>
+                <nav>
+                    <ul class="menuSide">
+                        <li>
+                            <a href="../estoque_home.html" target="_parent">
+                                <img src="../icones/home-branco.png" alt="Voltar para o inicio" class="icones" title="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../clientes.html" target="_parent">
+                                <img src="../icones/clientes-fff.png" alt="Clientes" class="icones" title="Clientes">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pesquisa.html" target="_parent">
+                                <img src="../icones/pesquisa-fff.png" alt="Clientes" class="icones" title="Pesquisar">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../Ranking.html" target="_parent">
+                                <img src="../icones/ranking-fff.png" alt="Clientes" class="icones" title="Ranking de vendas">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../configuracoes.html" target="_parent">
+                                <img src="../icones/configuracoes-fff.png" alt="Clientes" class="icones" title="Configurações">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../login.html" target="_parent">
+                                <img src="../icones/exit.png" alt="Sair" class="icones" title="Sair">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+
+            <main class="flexEstoque">
+
+                <form action="#" method="POST" id="estoque">
+                    <p>
+                        Pesquisar:<input type="text" id="nomeP"><br><br>(Pesquise por nome ou lote do produto)
+                    </p>
+                    <br><br>
+                    <input type="reset" class="btnRel btnrela" value="Limpar campos">
+                    <input type="button" class="btnRel btnrelb" value="buscar">
+                </form>
+
+
+                <article class="produtoverificado">
+
+                    <center>
+                        <div>
+                            <h3>Dipirona</h3>
+                            <p>Lote: <code>12345678</code><br> Validade: <code>20/12/2021</code>
+                            </p>
+                        </div>
+                        <p>Quantidade em estoque(caixa): <code>15</code> </p>
+                        <div>
+                            <p>Quantidade em estoque unidades: <code>300</code></p>
+                        </div>
+                        <br>
+                        <div>
+                            <p>Número de validades registradas: <code>5</code></p>
+                            <br>
+                            <p>Validade mais distante: <code>05/04/2023</code></p>
+                        </div>
+                    </center>
+                </article>
+
+
+            </main>
+        </div>
+
+    </div>
+    <script language="JavaScript">
+        function openWindow(theUrl, winName, features) {
+            window.open(theUrl, winName, features);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de mercadorias || PharmaSys</title>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/troca.js"></script>
+    <script src="../js/redireciona.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/form-cadastro.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div>
+                <p>Usuário:</p>
+            </div>
+            <div>
+                <a href="javascript:void(0)" title="Entre em contato com o suporte em caso de perda de senha" onClick="openWindow('../chat.html','','scrollbars=no, width=500, height=1000, left=0, top=0')">Ajuda</a>
+            </div>
+        </header>
+
+        <div class="content">
+            <aside>
+                <nav>
+                    <ul class="menuSide">
+                        <li>
+                            <a href="../estoque_home.html" target="_parent">
+                                <img src="../icones/home-branco.png" alt="Voltar para o inicio" class="icones" title="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../clientes.html" target="_parent">
+                                <img src="../icones/clientes-fff.png" alt="Clientes" class="icones" title="Clientes">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pesquisa.html" target="_parent">
+                                <img src="../icones/pesquisa-fff.png" alt="Clientes" class="icones" title="Pesquisar">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../Ranking.html" target="_parent">
+                                <img src="../icones/ranking-fff.png" alt="Clientes" class="icones" title="Ranking de vendas">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../configuracoes.html" target="_parent">
+                                <img src="../icones/configuracoes-fff.png" alt="Clientes" class="icones" title="Configurações">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../login.html" target="_parent">
+                                <img src="../icones/exit.png" alt="Sair" class="icones" title="Sair">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main>
+                <h1>Registro de mercadorias</h1>
+
+                <button class="tipoDePag cad" title="Clique para cadastrar um novo produto">
+                    <p>+ Novo produto</p>
+                </button>
+
+                <form action="#" method="post" class="form-cad">
+
+                    <div class="campo">
+                        <label for="nome">Nome do produto</label>
+                        <input type="text" id="snome" name="nome" style="width: 19.5em" value="" required>
+                    </div>
+                    <div class="campo">
+                        <label for="snome">Código de barras</label>
+                        <input type="text" id="scod" name="snome" style="width: 20em" value="" required>
+                    </div>
+
+
+                    <div class="labels-vertical">
+                        <label>
+                                <input type="radio" name="sexo" value="masculino" required >Medicamento
+                            </label>
+                        <label>
+                                <input type="radio" name="sexo" value="feminino" required >Higiene
+                            </label>
+                        <label>
+                                <input type="radio" name="sexo" value="feminino" required >Beleza
+                            </label>
+                        <label>
+                                <input type="radio" name="sexo" value="feminino" required >Suprimento
+                            </label>
+                    </div><br>
+                    <div class="campo">
+                        <label for="email">E-mail para envio do cadastro</label>
+                        <input type="text" id="email" name="email" style="width: 41em" value="" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Quantidade da caixa</label>
+                        <input type="text" id="telefone" name="telefone" style="width: 10em" value="" required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">Número do lote</label>
+                        <input type="text" id="telefone" name="telefone" style="width: 10em" value="" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="cidade">Data de Validade</label>
+                        <input type="date" id="cidade" name="cidade" style="width: 10em" value="" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Observações</label>
+                        <textarea rows="4" style="width: 20em" id="mensagem" name="mensagem"></textarea>
+                    </div>
+                    <button type="reset" name="submit" class="tipoDePag">Limpar campos</button>
+                    <button type="submit" name="submit" class="tipoDePag cadfinal">Cadastrar</button>
+                </form>
+
+            </main>
+        </div>
+
+    </div>
+    <script language="JavaScript">
+        function openWindow(theUrl, winName, features) {
+            window.open(theUrl, winName, features);
+        }
+    </script>
+</body>
+
+</html>

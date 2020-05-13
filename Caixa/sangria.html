@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangria || PharmaSys</title>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/troca.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+
+
+    <div id="container">
+
+        <header>
+            <div>
+                <p>Usuário:</p>
+            </div>
+            <div>
+                <a href="javascript:void(0)" title="Entre em contato com o suporte em caso de perda de senha" onClick="openWindow('../chat.html','','scrollbars=no, width=500, height=1000, left=0, top=0')">Ajuda</a>
+            </div>
+        </header>
+
+        <div class="content">
+            <aside>
+                <nav>
+                    <ul class="menuSide">
+                        <li>
+                            <a href="../caixa_home.html" target="_parent">
+                                <img src="../icones/home-branco.png" alt="Voltar para o inicio" class="icones" title="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../clientes.html" target="_parent">
+                                <img src="../icones/clientes-fff.png" alt="Clientes" class="icones" title="Clientes">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pesquisa.html" target="_parent">
+                                <img src="../icones/pesquisa-fff.png" alt="Clientes" class="icones" title="Pesquisar">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../Ranking.html" target="_parent">
+                                <img src="../icones/ranking-fff.png" alt="Clientes" class="icones" title="Ranking de vendas">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../configuracoes.html" target="_parent">
+                                <img src="../icones/configuracoes-fff.png" alt="Clientes" class="icones" title="Configurações">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../login.html" target="_parent">
+                                <img src="../icones/exit.png" alt="Sair" class="icones" title="Sair">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <main>
+                <h1>Realizar sangria</h1>
+                <form action="" method="POST">
+                    <label for="codigo">Login do operador: </label>
+                    <input type="password" name="" id="codigo"><br>
+                    <label for="saldo_atual">Valor atual caixa:</label>
+                    <input type="text" id="saldo_atual"><br>
+                    <label for="valor_sangria">Valor retirado</label>
+                    <input type="text" id="valor_sangria"><br>
+                    <input type="reset" id="limpar" value="Limpar" class="tipoDePag">
+                    <input type="submit" id="gravar" value="enviar" class="tipoDePag">
+                </form>
+            </main>
+        </div>
+
+    </div>
+
+</body>
+<script language="JavaScript">
+    function openWindow(theUrl, winName, features) {
+        window.open(theUrl, winName, features);
+    }
+</script>
+
+</html>

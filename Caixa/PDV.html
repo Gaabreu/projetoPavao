@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDV || PharmaSys</title>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/troca.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../icones/Logotipo.ico" />
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div>
+                <p>Usuário:</p>
+            </div>
+            <div>
+                <a href="javascript:void(0)" title="Entre em contato com o suporte em caso de perda de senha" onClick="openWindow('../chat.html','','scrollbars=no, width=500, height=1000, left=0, top=0')">Ajuda</a>
+            </div>
+        </header>
+        <div class="content">
+            <aside>
+                <nav>
+                    <ul class="menuSide">
+                        <li>
+                            <a href="../caixa_home.html" target="_parent">
+                                <img src="../icones/home-branco.png" alt="Voltar para o inicio" class="icones" title="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../clientes.html" target="_parent">
+                                <img src="../icones/clientes-fff.png" alt="Clientes" class="icones" title="Clientes">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pesquisa.html" target="_parent">
+                                <img src="../icones/pesquisa-fff.png" alt="Clientes" class="icones" title="Pesquisar">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Ranking.html" target="_parent">
+                                <img src="../icones/ranking-fff.png" alt="Clientes" class="icones" title="Ranking de vendas">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../configuracoes.html" target="_parent">
+                                <img src="../icones/configuracoes-fff.png" alt="Clientes" class="icones" title="Configurações">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../login.html" target="_parent">
+                                <img src="../icones/exit.png" alt="Sair" class="icones" title="Sair">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main>
+
+
+                <h1 class="novaC">Verificar novas comandas</h1>
+
+                <article id="pdv">
+                    <div>
+                        <form action="#" class="formPAG">
+                            <label for="paga">Forma de pagamento</label>
+                            <br>
+                            <select id="paga">
+                                <option value="blank">--</option>                    
+                                <option value="dinheiro">Dinheiro</option>
+                                <optgroup label="Cartão">
+                                    <option value="debito">Débito</option>
+                                    <option value="credito">crédito</option>
+                                </optgroup>
+                                <optgroup label="Convênio">
+                                    <option value="Amil">Amil Saúde</option>
+                                    <option value="Bradesco">Bradesco Saúde</option>
+                                    <option value="Sulamérica">Sulamerica Saúde</option>
+                                    <option value="GNDI">GNDI Intermédica</option>
+                                </optgroup>
+                            </select>
+                            <hr>
+                            <input type="radio" id='avista' name="tipo">
+                            <label for="avista" class="tipoDePag avista">A vista</label>
+                            <input type="radio" id="parcela" name="tipo">
+                            <label for="parcela" class="tipoDePag parcela">Parcelado</label>
+                            <hr>
+                            <select name="" class="parcelas">
+                                <optgroup>
+                                    <option value="">--</option>
+                                    <option value="">2X</option>
+                                    <option value="">3X</option>
+                                    <option value="">4X</option>
+                                    <option value="">5X</option>
+                                    <option value="">6X</option>
+                                    <option value="">7X</option>
+                                    <option value="">8X</option>
+                                    <option value="">9X</option>
+                                    <option value="">10X</option>
+                                </optgroup>
+                            </select>
+                            <input type="reset" class="tipoDePag" value="Redefinir">
+                            <input type="button" class="tipoDePag" value="Confirmar">
+                        </form>
+                    </div>
+
+                    <div>
+                        <form action="#" method="POST" class="formPAG">
+                            <section>
+                                <table id="itens-pdv">
+                                    <thead>
+                                        <tr>
+                                            <th>QTDE</th>
+                                            <th>Produto</th>
+                                            <th>Valor unitário</th>
+                                            <th>Desconto</th>
+                                            <th>Valor final</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Dipirona</td>
+                                            <td>1,50</td>
+                                            <td>--</td>
+                                            <td>15,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Tenispé</td>
+                                            <td>6,00</td>
+                                            <td>--</td>
+                                            <td>6,00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                                <hr>
+                            </section>
+                            <section class="valores">
+                                <div>Total a pagar: <input type="text" id="Valor" value="21,00"></div>
+                                <div>Valor a pago: <input type="text" id="ValorPago"></div>
+                                <hr>
+                            </section>
+                            <input type="reset" class="tipoDePag" value="Cancelar compra">
+                            <input type="button" class="tipoDePag confirmar" value="Finalizar compra">
+
+                        </form>
+
+                        </section>
+                    </div>
+                </article>
+            </main>
+        </div>
+    </div>
+    <script language="JavaScript">
+        function openWindow(theUrl, winName, features) {
+            window.open(theUrl, winName, features);
+        }
+    </script>
+
+    <script>
+        $(function() {
+            $(".novaC").css("cursor", "pointer");
+            $(".novaC").click(function() {
+                alert("Não há novas comandas no momento!");
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandas || PharmaSys</title>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/troca.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <header>
+            <div>
+                <p>Usuário:</p>
+            </div>
+
+            <div>
+                <a href="javascript:void(0)" title="Entre em contato com o suporte em caso de perda de senha" onClick="openWindow('../chat.html','','scrollbars=no, width=500, height=1000, left=0, top=0')">Ajuda</a>
+            </div>
+        </header>
+
+        <div class="content">
+            <aside>
+                <nav>
+                    <ul class="menuSide">
+                        <li>
+                            <a href="../balcao_home.html" target="_parent">
+                                <img src="../icones/home-branco.png" alt="Voltar para o inicio" class="icones" title="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../clientes.html" target="_parent">
+                                <img src="../icones/clientes-fff.png" alt="Clientes" class="icones" title="Clientes">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pesquisa.html" target="_parent">
+                                <img src="../icones/pesquisa-fff.png" alt="Clientes" class="icones" title="Pesquisar">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Ranking.html" target="_parent">
+                                <img src="../icones/ranking-fff.png" alt="Clientes" class="icones" title="Ranking de vendas">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../configuracoes.html" target="_parent">
+                                <img src="../icones/configuracoes-fff.png" alt="Clientes" class="icones" title="Configurações">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../login.html" target="_parent">
+                                <img src="../icones/exit.png" alt="Sair" class="icones" title="Sair">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main>
+
+                <a href="#" class="comandadd">
+                    <h2>+ Adicionar nova comanda</h2>
+                </a>
+
+                <div class="opt-comandas">
+                    <a href="#" id="entrega">
+                        Atendimento de entrega
+                    </a> ||
+                    <a href="#">
+                        Contador de comandas
+                    </a>
+                </div>
+
+                <iframe src="../balcao_home.html" width="100%" height="200" class="iframe"></iframe>
+                <section class="comandas">
+                    <h6>PharmaSys Sistemas</h6>
+                    <p>==========================</p>
+                    <p>
+                        <strong>Data:</strong> 07/05/2020 -
+                        <strong>Nº do pedido:</strong> 44123
+                    </p>
+                    <strong>
+                        <a href="#" class="addProduct">
+                            <p>+ Adicionar produto</p>
+                        </a>
+                    </strong>
+                    <p>==========================</p>
+                    <strong>
+                        <p>Valor final:</p>
+                    </strong>
+                    <input type="reset" value="Apagar comanda" class="resetarComanda">
+                    <button>Enviar para o caixa</button>
+                </section>
+
+                <div class="mapa">
+                    <iframe width="100%" height="400" src="https://maps.google.com/maps?hl=en&amp;q=Av. Dr. Ussiel Cirílo, 225 - Vila Jacuí, São Paulo - SP, 08060-070+()&amp;ie=UTF8&amp;t=p&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0"
+                        marginwidth="0">
+                    </iframe>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            var comandadd = $(".comandadd");
+            comandadd.click(function() {
+                $(".comandas").show();
+                $(".mapa").hide();
+                var add = $(".addProduct");
+                add.click(function() {
+                    add.append("<br>Produto XX - PREÇO - 10,00");
+                });
+            });
+        });
+
+        $(function() {
+            var entrega = $("#entrega");
+            entrega.click(function() {
+                $(".comandas").hide();
+                $(".mapa").show(450);
+            });
+        });
+    </script>
+
+    <script language="JavaScript">
+        function openWindow(theUrl, winName, features) {
+            window.open(theUrl, winName, features);
+        }
+    </script>
+
+</body>
+
+</html>

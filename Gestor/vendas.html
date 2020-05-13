@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas || PharmaSys</title>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/troca.js"></script>
+    <script src="../js/redireciona.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/form-cadastro.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div>
+                <p>Usuário:</p>
+            </div>
+
+            <div>
+                <a href="javascript:void(0)" title="Entre em contato com o suporte em caso de perda de senha" onClick="openWindow('../chat.html','','scrollbars=no, width=500, height=1000, left=0, top=0')">Ajuda</a>
+            </div>
+        </header>
+
+        <div class="content">
+            <aside>
+                <nav>
+                    <ul class="menuSide">
+                        <li>
+                            <a href="../gestor-home.html" target="_parent">
+                                <img src="../icones/home-branco.png" alt="Voltar para o inicio" class="icones" title="Home">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../clientes.html" target="_parent">
+                                <img src="../icones/clientes-fff.png" alt="Clientes" class="icones" title="Clientes">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pesquisa.html" target="_parent">
+                                <img src="../icones/pesquisa-fff.png" alt="Clientes" class="icones" title="Pesquisar">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../Ranking.html" target="_parent">
+                                <img src="../icones/ranking-fff.png" alt="Clientes" class="icones" title="Ranking de vendas">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="../configuracoes.html" target="_parent">
+                                <img src="../icones/configuracoes-fff.png" alt="Clientes" class="icones" title="Configurações">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../login.html" target="_parent">
+                                <img src="../icones/exit.png" alt="Sair" class="icones" title="Sair">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main>
+                <h1>Vendas</h1>
+
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Posição</th>
+                            <th>Produto</th>
+                            <th>QTDE Vendidas</th>
+                            <th>QTDE em estoque</th>
+                            <th>Preço</th>
+                            <th>DPTO</th>
+                            <th>Precisa de receita?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dipirona</td>
+                            <td>487</td>
+                            <td>222</td>
+                            <td>1,50</td>
+                            <td>Medicamentos</td>
+                            <td>Não</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Xarelto</td>
+                            <td>402</td>
+                            <td>1.050</td>
+                            <td>265,38</td>
+                            <td>Medicamentos</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Addera D3</td>
+                            <td>190</td>
+                            <td>50</td>
+                            <td>32,99</td>
+                            <td>Medicamentos</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Victoza</td>
+                            <td>352,00</td>
+                            <td>50</td>
+                            <td>10</td>
+                            <td>Medicamentos</td>
+                            <td>Sim</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>
+    <script language="JavaScript">
+        function openWindow(theUrl, winName, features) {
+            window.open(theUrl, winName, features);
+        }
+    </script>
+</body>
+
+</html>

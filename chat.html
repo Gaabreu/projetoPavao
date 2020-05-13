@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat || PharmaSys</title>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+        #container {
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        #Form {
+            width: 90vw;
+            margin: 20% auto 20% -30%;
+        }
+        
+        textarea {
+            margin: 5%;
+        }
+        
+        .botoes {
+            display: flex;
+        }
+        
+        .btn {
+            width: 50%;
+            background: #271d62;
+            padding: 3%;
+            border-radius: 1vw;
+            color: #fff;
+            font-size: 1.3em;
+            letter-spacing: 1%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <div class="chat-popup" id="Form">
+            <form action="#" class="form-container">
+                <h1>SUPORTE</h1>
+
+                <label for="msg"><b>Envie uma mensagem para o suporte</b></label>
+                <textarea placeholder="Digite aqui seu problema" name="msg" rows="50" required></textarea>
+
+
+                <div class="botoes">
+                    <button type="submit" class="btn">Enviar</button>
+                    <button type="reset" class="btn cancel" onclick="closeForm()">Apagar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
